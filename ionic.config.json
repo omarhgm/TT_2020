@@ -1,5 +1,7 @@
 {
   "name": "tt-mapbox",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

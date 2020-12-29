@@ -1,17 +1,37 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Tab 3
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen="true">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-slides scrollbar="true" pager="true" [options]="slideOpts">
+        <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+            <ion-img src="assets/imgs/police.png"></ion-img>
+            <br>
+            <h2>Ingrese su código</h2>
+            <ion-button expand="block" (click)="mostrarInput()">
+                Ingresar
+            </ion-button>
+        </ion-slide>
+
+        <!-- Segundo Slide -->
+        <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+
+            <ion-img src="assets/imgs/check.jpg"></ion-img>
+            <h2>¿Listo para empezar?</h2>
+            <ion-button color="primary" (click)="continuar()">
+                Ir al mapa
+            </ion-button>
+
+        </ion-slide>
+        <!-- Fin del último slide -->
+    </ion-slides>
 </ion-content>
